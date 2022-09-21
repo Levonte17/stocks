@@ -3,6 +3,7 @@
 import Main from './pages/Main';
 import Stocks from './pages/Stocks';
 import About from './pages/About';
+import Dashboard from './pages/Dashboard';
 
 //REACT-ROUTER
 import { Routes, Route } from 'react-router-dom';
@@ -20,7 +21,7 @@ function App() {
             <Route path='/' element={<Main />} />
             <Route path='/about' element={<About />} />
             <Route path='/stocks/:symbol' element={<Stocks />} />
-            <Route path='/stocks' element={<Stocks />} />
+            <Route path='/stocks' element={<Dashboard />} />
           </Routes>
     </div>
   );
